@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="boot/boot/css/bootstrap.min.css">
+<style>
+    .nav{
+        background-color: rgb(36, 37, 34);
+        color: white;
+        padding: 10px;
+        gap: 8px;
+        justify-content: space-around;
+        font-size: 16px;
+        text-align: center;
+        display: flex;
+
+    }
+    .nav a{
+        text-decoration: none;
+        font-size: 12px;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        padding: 10px;
+    }
+    .footer{
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+        background-color: rgb(27, 2, 2);
+    
+    }
+    .btn{
+        margin-left:1100px;
+    }
+    body{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    
+</style>
+<body>
+    <div class="nav">
+    <a href="dashboard.html">Library System</a>
+    <a href="manage-user.html">Manage Users</a>
+    <a href="manage-book.html">manage Books</a>
+    <a href="manage-member.html">Manage Members</a>
+    <a href="#">Books issuance</a>
+    <a href="#">Manage Returns</a>
+    <a href="#">Reports</a>
+
+
+    <!--<a href="" class="account"><i class="fas fa-user">Account</i></a><p></p>-->
+    <div class="ms-auto p-2 dropdown">
+        <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button">
+            Account <i class="fas fa-user-circle"></i>
+        </span>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                <li><a class="dropdown-item" href="#">Change Profile</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+    </div>
+       
+   </div>
+   <h3>Manage Users</h3>
+   <a href="#" class="btn btn-primary">Add New user</a>
+   <!--<form>
+    <div class="row">
+      <div class="col">
+        <label for="exampleInputEmail1">name</label>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      
+    </div>
+    <div class="col">
+      <label for="exampleInputEmail1">Role</label>
+      <input type="text" class="form-control" placeholder="">
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" placeholder="">
+      </div>
+      
+    </div>
+     
+    <div class="row">
+      <div class="col">
+        <label for="exampleInputEmail1">Password</label>
+        <input type="password" class="form-control" placeholder="">
+      </div>
+    </div>
+    <div class="modal-footer justify-content-between">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save User</button>
+    </div>
+
+  </form>-->
+   <div class="card">
+    <div class="card-body">
+      <table id="usersTable" class="table table-bordered table-striped" style="width:100%">
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>role</th>
+            <th>email</th>
+            <th>edit</th>
+            <th>delete</th>
+            <th>status</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>jane doe</td>
+            <td>role</td>
+            <td>jane@example.com</td>
+            <td><button type="button" class="btn btn-block btn-primary">Block</button></td>
+            <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+            <td><button type="button" class="btn btn-block btn-warning">Block</button></td>
+          </tr>
+          <tr>
+            <td>john smith</td>
+            <td>librarian</td>
+            <td>john@example.com</td>
+            <td><button type="button" class="btn btn-block btn-primary">Block</button></td>
+            <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+            <td><button type="button" class="btn btn-block btn-success">Active</button></td>
+          </tr>
+          <tr>
+            <td>mary johnson</td>
+            <td>member</td>
+            <td>mary@example.com</td>
+            <td><button type="button" class="btn btn-block btn-primary">Edit</button></td>
+            <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+            <td><button type="button" class="btn btn-block btn-warning">Block</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+   
+    
+        <div class="footer">
+        @2025 Library Management System All right reserved.
+        </div> 
+        <script src="boot/boot/js/bootstrap.bundle.js"></script>
+        <script src="boot/boot/js/dataTables.min.js"></script>
+        <script src="boot/boot/js/jquery.js"></script>
+        
+</body>
+</html>

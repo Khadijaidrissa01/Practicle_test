@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="boot/boot/css/bootstrap.min.css">
+<style>
+    .nav{
+        background-color: rgb(36, 37, 34);
+        color: white;
+        padding: 10px;
+        gap: 8px;
+        justify-content: space-around;
+        font-size: 16px;
+        text-align: center;
+        display: flex;
+
+    }
+    .nav a{
+        text-decoration: none;
+        font-size: 12px;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        padding: 10px;
+    }
+    .footer{
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+        background-color: rgb(27, 2, 2);
+    
+    }
+    .btn{
+        margin-left:1060px;
+    }
+    body{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <div class="nav">
+        <a href="dashboard.html">Library System</a>
+        <a href="manage-user.html">Manage Users</a>
+        <a href="manage-book.html">manage Books</a>
+        <a href="manage-member.html">Manage Members</a>
+        <a href="#">Books issuance</a>
+        <a href="#">Manage Returns</a>
+        <a href="#">Reports</a>
+    
+    
+        <!--<a href="" class="account"><i class="fas fa-user">Account</i></a><p></p>-->
+        <div class="ms-auto p-2 dropdown">
+            <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button">
+                Account <i class="fas fa-user-circle"></i>
+            </span>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Change Password</a></li>
+                    <li><a class="dropdown-item" href="#">Change Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+        </div>
+           
+       </div>
+    <h3>Manage Members</h3>
+   <a href="#" class="btn btn-primary">Add New Member</a>
+   <div class="card">
+    <div class="card-body">
+      <table id="usersTable" class="table table-bordered table-striped" style="width:100%">
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>ID</th>
+            <th>Phone</th>
+            <th>email</th>
+            <th>edit</th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>jane doe</td>
+            <td>MEM001</td>
+            <td>123-456-7890</td>
+            <td>jane@example.com</td>
+            <td><button type="button" class="btn btn-block btn-primary">Edit</button></td>
+            <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <td>john smith</td>
+            <td>MEM002</td>
+            <td>987-654-3210</td>
+            <td>john@example.com</td>
+            <td><button type="button" class="btn btn-block btn-primary">edit</button></td>
+            <td><button type="button" class="btn btn-block btn-danger">Delete</button></td>
+            
+          </tr>
+          
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="boot/boot/js/bootstrap.bundle.js"></script>
+ <script src="boot/boot/js/dataTables.min.js"></script>
+<script src="boot/boot/js/jquery.js"></script>
+</body>
+</html>

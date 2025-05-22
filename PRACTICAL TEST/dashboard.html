@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="boot/boot/css/bootstrap.min.css">
+<style>
+    .nav{
+        background-color: rgb(36, 37, 34);
+        color: white;
+        padding: 20px;
+        gap: 20px;
+
+    }
+    .nav a{
+        text-decoration: none;
+        font-size: 12px;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        padding: 10px;
+    }
+    .card-blue{
+        background-color: blue;
+        color: white;
+    }
+    .card-green{
+        background-color: green;
+        color: white;
+    }
+    .card-yellow{
+        background-color: orange;
+        color: white;
+    }
+    .main{
+        display: flex;
+        width: 900px;
+        margin: auto;
+        gap: 10px;
+        padding: 20px;
+    }
+    .account{
+        margin-left: auto;
+    }
+    .footer{
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+        background-color: rgb(27, 2, 2);
+    
+    }
+    .nav a:hover{
+        background-color: grey;
+    }
+    
+</style>
+<body>
+    <div class="nav">
+        <a href="dashboard.html">Library System</a>
+        <a href="manage-user.html">Manage Users</a>
+        <a href="manage-book.html">manage Books</a>
+        <a href="manage-member.html">Manage Members</a>
+        <a href="#">Books issuance</a>
+        <a href="#">Manage Returns</a>
+        <a href="#">Reports</a>
+
+
+        <!--<a href="" class="account"><i class="fas fa-user">Account</i></a><p></p>-->
+        <div class="ms-auto p-2 dropdown">
+            <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button">
+                Account <i class="fas fa-user-circle"></i>
+            </span>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Change Password</a></li>
+                    <li><a class="dropdown-item" href="#">Change Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+          </div>
+           
+    </div>
+        <p><center>Welcome to the Library Management Dashboard</center></p>
+    
+        
+            <div class="main row">
+                <div class="card-blue card col-md-4">
+                     <h2>Total Books</h2>
+                     <div class="contener">
+                         <h2>1,250</h2>
+                     </div>
+                 </div>
+         
+                 <div class="card-green card col-md-4">
+                     <h2>Active Members</h2>
+                     <div class="contener">
+                         <h2>540</h2>
+                     </div>
+                 </div>
+                 <div class="card-yellow card col-md-4">
+                     <h2>Books Issued</h2>
+                     <div class="container">
+                         <h2>320</h2>
+
+                     </div>
+                 </div>
+             </div>
+             <hr>
+             <div class="footer">
+                 @2025 Library Management System All right reserved.
+            </div>
+            </div>
+    </div>
+</body>
+</html>
